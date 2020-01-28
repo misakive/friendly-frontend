@@ -31,7 +31,7 @@ export default function Main({ match }){
     useEffect(() => {
         
         async function loadMatch() {
-            const socket = io('http://localhost:3333', {
+            const socket = io(process.env.REACT_APP_API_URL, {
             query: {user: match.params.id}
         });
 
