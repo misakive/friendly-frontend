@@ -41,15 +41,12 @@ export default function Register() {
       latitude,
       longitude,
     }
+    
     await api.post('/devs', data)
       .then(()=>history.push(`/`))
       .catch((err)=>{
-        
-          alert(`Erro no cadastro, tente novamente. Erro: ${err.response.data.error}`)
-        
-      })
-    
-    
+        alert(`Erro no cadastro, tente novamente. Erro: ${err.response.data.error}`)
+    })
   }
 
   return (
