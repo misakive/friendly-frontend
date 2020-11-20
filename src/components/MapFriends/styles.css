@@ -1,0 +1,19 @@
+.main-container {
+  height: 100vh;
+  width: 100%;
+  padding: 0 30px;
+  margin: 32px auto;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border-width: 10px;
+  border-color: '#FFF';
+}
+
+.callout {
+  width: 260;
+  background-color: '#FFF'
+}
